@@ -20,8 +20,12 @@ set -euo pipefail
 #            --expression 's/^\s*access_log.*/access_log off;/' \
 #            /etc/nginx/nginx.conf
 
-# By default, this script does nothing.  You'll have to modify it as
-# appropriate for your application.
+apt-mark hold grub
+apt-mark hold grub-common
+apt-mark hold grub2-common
+apt-mark hold grub-pc-bin
+apt-mark hold grub-pc
+apt-mark hold grub2
 
 apt-get update
 apt-get -y dist-upgrade
