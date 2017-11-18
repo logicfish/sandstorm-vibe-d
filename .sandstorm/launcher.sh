@@ -30,5 +30,6 @@ set -euo pipefail
 # appropriate for your application.
 cd /opt/app
 #source /home/vagrant/dlang/dmd-2.077.0/activate
-dub run
+#dub run
+./sandstorm-vibe-d
 exit 0
