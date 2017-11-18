@@ -20,7 +20,7 @@ set -euo pipefail
 # By default, this script does nothing.  You'll have to modify it as
 # appropriate for your application.
 
-cd /opt/app
-dub build
+#cd /opt/app
+#dub build
 
 exit 0
