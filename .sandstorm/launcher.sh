@@ -28,6 +28,18 @@ set -euo pipefail
 
 # By default, this script does nothing.  You'll have to modify it as
 # appropriate for your application.
+
+rm -rf /var/tmp
+mkdir /var/tmp
+
+export DBPATH=/var/lib/vibelog
+export HOME=/home/vagrant
+mkdir -p $DBPATH
+mongod --fork --logpath /tmp/mongod.log --dbpath $DBPATH --noauth --bind_ip 127.0.0.1 --nohttpinterface --wiredTigerEngineConfigString "log=(prealloc=false,file_max=200KB)" --wiredTigerCacheSizeGB 1 
+
+#TMPDIR=/var/tmp ROOT_URL=http://127.0.0.1:8000 MONGO_URL=mongodb://127.0.0.1:27017 PORT=8000 node main
+
 cd /opt/app
 ./sandstorm-vibe-d
+
 exit 0
