@@ -1,0 +1,3 @@
+.diskuto .reply-form input, .diskuto .reply-form button { margin-top: 0; opacity: 1.0; }
+.diskuto .reply-form textarea { height: 9em; resize: vertical; }
+.diskuto .comment .reply-form textarea { flex-basis: 100%; height: 3em; }

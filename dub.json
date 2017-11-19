@@ -4,8 +4,9 @@
 		"logicfish"
 	],
 	"dependencies": {
-		"vibe-d": "~>0.8.2-rc.1"
+		"vibelog": "~>0.6.1"
 	},
+	"targetType" : "executable",
 	"description": "A simple vibe.d server application.",
 	"copyright": "Copyright © 2017, logicfish",
 	"license": "proprietary"

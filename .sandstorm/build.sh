@@ -21,6 +21,7 @@ set -euo pipefail
 # appropriate for your application.
 
 cd /opt/app
-dub build --build=release --parallel
+dub upgrade
+dub build --build=debug --parallel
 
 exit 0

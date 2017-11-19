@@ -1,0 +1,67 @@
+.diskuto form { margin: 0; }
+.diskuto p { margin: 0; margin-bottom: 0.5em; margin-top: 0.25em; }
+.diskuto button, .diskuto input, .diskuto textarea, .diskuto .vote-count {
+	box-sizing: content-box;
+	padding: 1pt 0.3em;
+	font-family: inherit;
+	font-size: 90%;
+	color: black;
+	line-height: 1.5em;
+	border: 1px solid #ddd;
+	height: 1.5em;
+}
+.diskuto input, .diskuto textarea, .diskuto .voting, .diskuto .avatar {
+	box-shadow: 0 0px 8px 0 #ddd;
+	box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.15);
+}
+.diskuto pre {
+	line-height: 1.5em;
+	background-image: linear-gradient(90deg, rgba(128,128,128,0.3), rgba(128,128,128,0.3) 0.5em, rgba(128,128,128,0.05) 0.501em);
+	border: 1px solid #eee;
+	padding-left: 1em;
+}
+.diskuto input, .diskuto textarea { background: white; }
+.diskuto input, .diskuto button { transition: all 0.3s ease; }
+.diskuto input:disabled { background-color: #eee; }
+.diskuto button { background: linear-gradient(#fff, #f4f4f4); }
+.diskuto button.chosen { color: #fa4; font-weight: bold; background-color: #888; }
+.diskuto button:active { border: 1px solid #bbb; background-color: #ddd; }
+.diskuto button:hover:enabled { border: 1px solid #bbb; background-color: #ccc; }
+.diskuto button:disabled { background: linear-gradient(#eee, #eee); }
+.diskuto .comment { display: flex; flex-wrap: wrap; margin-top: 1.5em; }
+.diskuto .avatar { margin-right: 0.5em; margin-bottom: 0.5em; border-radius: 5px; border: 1px solid #ddd; width: 48px; height: 48px; }
+.diskuto .comment .comment .avatar { width: 42px; height: 42px; }
+.diskuto .right { flex-grow: 1; flex-basis: 0; }
+.diskuto .author, .diskuto .date, .diskuto .comment-status { font-size: 80%; }
+.diskuto .author { color: #fa4; font-weight: bold; }
+.diskuto a.author:hover { color: #fa4; font-weight: bold; text-decoration: underline; }
+.diskuto .date { text-decoration: none; color: #aaa; }
+.diskuto .date:before, .diskuto .comment-status:before { color: #fa4; font-weight: bold; content: "•"; padding: 0 0.4em; color: #aaa; }
+.diskuto .date:hover:after { content: "⚓"; margin-left: 0.25em; }
+.diskuto .comment-status { display: inline-block; color: red; }
+.diskuto .contents { overflow: auto; max-height: 50em; }
+.diskuto .error { color: red; }
+.diskuto .action-bar, .diskuto .voting { display: flex; flex-wrap: nowrap; align-items: flex-start; flex-shrink: 0; }
+.diskuto .action-bar { flex-basis: 100%; }
+.diskuto .vote-count { border-left: none; border-right: none; padding: 1pt 0.5em; transition: all 0.3s ease; z-index: -1; }
+.diskuto arrow { display: inline; font-size: 70%; line-height: inherit; color: #666; padding: 0 0.1em; }
+.diskuto arrow.up:before { content: "▲"; }
+.diskuto arrow.down:after { content: "▼"; }
+.diskuto .vote-count.pos { background-color: #efd; }
+.diskuto .vote-count.bal { width: 0; padding-left: 0; padding-right: 0; }
+.diskuto .vote-count.neg { background-color: #fdd; }
+.diskuto .edit-button { margin-left: 0.5em; }
+.diskuto .edit, .diskuto .delete { display: none; }
+.diskuto .edit { flex-wrap: wrap; }
+.diskuto .edit textarea { flex-basis: 100%; resize: vertical; }
+.diskuto > .reply-form { width: 100%; }
+.diskuto .reply-form { display: flex; flex-basis: 100%; flex-wrap: wrap; margin: -4pt; }
+.diskuto .reply-form > * { margin: 4pt; }
+.diskuto .reply-form textarea { height: 1.5em; flex-basis: 100%; resize: none; transition: all 0.3s ease; z-index: 10; }
+.diskuto .reply-form input { flex-grow: 1; flex-basis: 0; }
+.diskuto .reply-form input, .diskuto .reply-form button { margin-top: -2em; opacity: 0; }
+.diskuto .comment .reply-form { margin-left: 0.5em; }
+.diskuto .comment .reply-form textarea { height: 1.5em; flex-basis: 14em; }
+.diskuto .reply-form.expanded textarea { height: 9EM; resize: vertical; flex-basis: 100%; }
+.diskuto .reply-form.controls-expanded input, .diskuto form.controls-expanded button { margin-top: 0; opacity: 1; }
+.diskuto .replies .replies { padding-left: 2em; }
