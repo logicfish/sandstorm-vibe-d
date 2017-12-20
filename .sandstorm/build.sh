@@ -20,8 +20,12 @@ set -euo pipefail
 # By default, this script does nothing.  You'll have to modify it as
 # appropriate for your application.
 
+curl -fsS https://dlang.org/install.sh | bash -s dmd
+source ~/dlang/dmd-2.077.1/activate
+
 cd /opt/app
+#source ~/dlang/dmd
 dub upgrade
-dub build --build=debug --parallel
+dub build --build=debug
 
 exit 0

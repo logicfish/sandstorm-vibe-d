@@ -34,18 +34,21 @@ apt-get -y dist-upgrade
 apt-get -y install libevent-dev libssl-dev
 #apt-get -y install g++ gcc-multilib xdg-utils
 
-wget http://master.dl.sourceforge.net/project/d-apt/files/d-apt.list -O /etc/apt/sources.list.d/d-apt.list
-apt-get update
-apt-get -y --allow-unauthenticated install --reinstall d-apt-keyring
-apt-get update
-apt-get -y install dmd-bin
-apt-get -y install dub
+#wget http://master.dl.sourceforge.net/project/d-apt/files/d-apt.list -O /etc/apt/sources.list.d/d-apt.list
+#apt-get update
+#apt-get -y --allow-unauthenticated install --reinstall d-apt-keyring
+#apt-get update
+#apt-get -y install dmd-bin
+#apt-get -y install dub
+
+#curl -fsS https://dlang.org/install.sh | bash -s dmd
 
 apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
 echo "deb http://repo.mongodb.org/apt/debian wheezy/mongodb-org/3.2 main" | tee /etc/apt/sources.list.d/mongodb-org-3.2.list
 apt-get update
 apt-get install -y calibre-bin g++ mongodb-org
 
+apt-get install -y git libtool
 #CURL_OPTS=""
 #curl --silent --show-error https://install.meteor.com |sh
 
